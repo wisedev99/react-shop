@@ -1,12 +1,16 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
+
+import Counter from './containers/Counter/Counter';
 import './App.css';
-import Menu from './components/menu/Menu';
-function App() {
-  return (
-    <div>
-      <Menu/>
-    </div>
-  );
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+       <Counter />
+      </div>
+    );
+  }
 }
 
 export default App;
